@@ -68,4 +68,22 @@ https://github.com/Xia121/MVVM/tree/master/Fourth
 
 5.现在我们用Vue来替代代码中的View
 
+https://github.com/Xia121/MVVM/tree/master/Fifth
 
+Vue 的双向绑定（也是 Angular 的双向绑定）有这些功能：
+
+1.只要 JS 改变了 view.number 或 view.name 或 view.n （注意 Vue 把 data 里面的 number、name 和 n 放到了 view 上面，没有 view.data 这个东西）， HTML 就会局部更新
+    
+2.只要用户在 input 里输入了值，JS 里的 view.n 就会更新。
+
+这就像双向绑定：JS 数据与页面元素互相绑定。
+
+##第六阶段:用vue彻底替换掉MVC##
+因为Vue有很多功能 他的核心功能是双向绑定和虚拟DOM但是当他实现的View的数据绑定之后觉得为什么我不把Controller 和 model 的功能一起替换掉呢
+于是我们有了现在的 Vue 哈哈哈
+
+https://github.com/Xia121/MVVM/tree/master/Sixth
+
+当然Vue肯定不是这么简单的里面有很多的技术点在里面 这仅仅是一个入门概括详细的我会再进行研究并发布的
+请大家给我点个赞啊啊啊！！！
+    
