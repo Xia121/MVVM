@@ -80,7 +80,6 @@ let controller = {
     },
     fetchModel(){
         this.model.fetch(1).then(() => {
-            console.log(this.model.data)
             this.view.render(this.model.data)
         })
     },

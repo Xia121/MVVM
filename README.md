@@ -34,6 +34,38 @@ https://github.com/Xia121/MVVM/tree/master/First
    于是乎，MVC 成了经久不衰的设计模式  
    
 4. 现在我们改进一下列子让她MVC起来 哈哈哈
+https://github.com/Xia121/MVVM/tree/master/Second
+```angular2html
+this[event.fnName].bind(this)
+//作用是传递this 确定this是let controller
+```
+
+
+##第三阶段:面向对象(模板代码)把重复的代码写到一个类##
+1.为什么要用类或者也可以换成原型那是因为如果有n个页面需要按照上面那个代码其实要重复n次
+
+如果写成类那么new一下就可以啦
+
+https://github.com/Xia121/MVVM/tree/master/Third
     
+##第四阶段:实现简单的观察者模式##
+1.这个问题解决「手动」调用 this.view.render(this.model.data),而出现的所以我改成
+这个的方法说白了就是在跟节点上绑定一个change事件当数据出来时通知change事件自动进行更改
+这样就不用手工调用了
+
+https://github.com/Xia121/MVVM/tree/master/Fourth
+
+##第五阶段:双向绑定和虚拟DOM的初步思想##
+1.在我们写的例子中你会发现DOM更新其实就是直接.html() 这样特别粗暴的进行  
+
+2.如果我们的例子里面有input并对根据input里面的数值进行计算的话 .html()这样就会把input
+
+里面的数值覆盖掉除非我们把数字记录到JS的data中进行储存(双向绑定初步思想)就这样出来了
+
+3. 而虚拟DOM则是换了一种思想那就是我只改变有关于数字的部分DOM，先生成即将改变的DOM对象然后替换掉文档中的DOM(这样就是虚拟DOM的初步思想)
+
+4.Angular 就是基于双向绑定而发明的，而 React 则是基于虚拟DOM思想。
+
+5.现在我们用Vue来替代代码中的View
 
 
