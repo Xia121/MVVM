@@ -1,0 +1,14 @@
+{
+  "name": "mvvm",
+  "version": "1.0.0",
+  "description": "想要理解这些概念最好是自己动手撸一个出来(感谢方方老师) 所以我们先要从MVC干起 很简单哟~",
+  "main": "admin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
